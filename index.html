@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="images/upiicsa.jpg" type="image/x-icon">
+    <link rel="icon" href="images/upiicsa.jpg" type="image/x-icon" >
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Work+Sans:300,400,500,700%7CZilla+Slab:300,400,500,700,700i%7CGloria+Hallelujah">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
@@ -24,10 +24,24 @@
         width: 300px;
         animation: mover 2s infinite ease-in-out; /* Movimiento constante */
     }
+    .center {
+  
+
+  float: right;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+ 
+}
+.contenedor {
+            display: grid;
+            place-items: center; /* Centra horizontal y verticalmente */
+            height: 100vh;
+        }
     </style>
     <style>
   .imagen-hover {
-      width: 300px; /* Tamaño de la imagen */
+       /* Tamaño de la imagen */
       transition: transform 0.5s ease-in-out; /* Transición suave */
   }
 
@@ -79,7 +93,7 @@
       var posicion = imagen.getBoundingClientRect().top;
       var alturaPantalla = window.innerHeight;
 
-      if (posicion < alturaPantalla - 100) {
+      if (posicion < alturaPantalla - 150) {
           imagen.classList.add('visible');
       }
   });
@@ -89,20 +103,14 @@
     <!--Preloader -->
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <div class="preloader">
-      <div class="preloader-logo"><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/upiicsa.jpg" alt="" width="245" height="50"/><img class="brand-logo-light" src="images/upiicsa.jpg" alt="" width="245" height="50"/></a>
-      </div>
-      <div class="preloader-body">
-        <div class="cssload-container">
-          <div class="cssload-speeding-wheel"></div>
-        </div>
-      </div>
+     
     </div>
     <div class="page">
       <!--Header-->
       <header class="page-header">
         <!-- RD Navbar-->
         <div class="rd-navbar-wrap">
-          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46x" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
             <div class="rd-navbar-main-outer">
               <div class="rd-navbar-main">
                 <!-- RD Navbar Panel-->
@@ -110,7 +118,7 @@
                   <!-- RD Navbar boton-->
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                   <!-- RD Navbar marcador-->
-                  <div class="rd-navbar-brand"><a class="brand" href="index.html"><img class="imagen-zigzag" src="images/upiicsa.jpg" alt="" width="300" height="60"/><img class="brand-logo-light" src="images/upiicsa.jpg" alt="" width="300" height="60"/></a>
+                  <div class="rd-navbar-brand"><a class="brand" href="index.html"><img width="150" height="30" src="images/upiicsa2.jpg" alt="" /><img class="brand-logo-light" src="images/upiicsa.jpg" alt="" width="100" height="100"/></a>
                   </div>
                 </div>
                 <div class="rd-navbar-nav-wrap">
@@ -120,9 +128,11 @@
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="temario.html">CONTENIDO</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">NOTICIAS</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="noticias.html">NOTICIAS</a>
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="integrantes.html">INTEGRANTES</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="acercade.html">ACERCA DE</a>
                     </li>
                   </ul>
                 </div>
@@ -190,7 +200,7 @@
               <h3 class="h-custom-1 f1">¿Que son las aplicaciones multimedia?</h3>
             </div>
             <div class="col-md-6 col-lg-5 col-xl-3 wow fadeIn">
-              <p>Las aplicaciones multimedia son programas o software dedicados para procesar y presentar contenido que combinan diferentes tipos de medios, como texto, imagenes, audio, video y animaciones. Estas aplicaciones permiten la interaccion del usuario y se utilizan en diversos campos, como la educacion, el entretenimiento la comunicacion y la publicidad. </p><a class="button button-primary-gradient" href="#"><span>Continuar leyendo</span></a>
+              <p>Las aplicaciones multimedia son programas o software dedicados para procesar y presentar contenido que combinan diferentes tipos de medios, como texto, imagenes, audio, video y animaciones. Estas aplicaciones permiten la interaccion del usuario y se utilizan en diversos campos, como la educacion, el entretenimiento la comunicacion y la publicidad. 
             </div>
             <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay=".2s">
               <!-- lista de progreso tema principal-->
@@ -339,75 +349,7 @@
           </div><a class="button button-lg button-primary-gradient wow fadeIn" data-wow-delay=".2s" href="#"><span>Ver todo</span></a>
         </div>
       </section> -->
-      <!-- ULTIMOS AGREGADOS-->
-      <section class="section section-lg bg-default text-center">
-        <div class="container">
-          <h2 class="wow fadeIn">Ultimos Agregados</h2>
-          <div class="row row-30 justify-content-center">
-            <div class="col-sm-10 col-md-6 wow fadeIn">
-              <!-- Post 1-->
-               <a class="post-light context-dark" href="#" style="background-image: url(images/img1.jpg);">
-                <div class="post-light-inner">
-                  <div class="badge">Unidad I</div>
-                  <div class="post-light-main">
-                    <h4 class="post-light-title">1.1.1 En la educacion</h4>
-                  </div>
-                </div></a>
-            </div>
-            <div class="col-sm-10 col-md-6 wow fadeIn" data-wow-delay=".2s">
-              <!-- Post 2--><a class="post-light context-dark" href="#" style="background-image: url(images/negocio1.jpg);">
-                <div class="post-light-inner">
-                  <div class="badge">Unidad I</div>
-                  <div class="post-light-main">
-                    <h4 class="post-light-title">1.1.2 En los negocios.</h4>
-                  </div>
-                </div></a>
-            </div>
-            <div class="col-sm-10 col-md-6 wow fadeIn">
-              <!-- Post 3--><a class="post-light context-dark" href="#" style="background-image: url(images/ubiq1.jpg);">
-                <div class="post-light-inner">
-                  <div class="badge">Unidad I</div>
-                  <div class="post-light-main">
-                    <h4 class="post-light-title">1.1.3 En el computo ubicuo.</h4>
-                  </div>
-                </div></a>
-            </div>
-            <div class="col-sm-10 col-md-6 wow fadeIn" data-wow-delay=".2s">
-              <!-- Post 4--><a class="post-light context-dark" href="#" style="background-image: url(images/TEMA1.jpeg);">
-                <div class="post-light-inner">
-                  <div class="badge">Unidad I</div>
-                  <div class="post-light-main">
-                    <h4 class="post-light-title">1.1.4 En la autoria.</h4>
-                  </div>
-                </div></a>
-            </div>
-          </div><a class="button button-lg button-primary-gradient wow fadeIn" href="temario.html" data-wow-delay=".2s"><span>Ver todos los temas</span></a>
-        </div>
-      </section>
-      <!-- Galleria final-->
-      <section class="section oh text-center">
-        <div class="owl-carousel owl-carousel-dots-space wow fadeIn" data-items="2" data-sm-items="3" data-md-items="4" data-lg-items="5" data-xl-items="6" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="false" data-margin="0" data-mouse-drag="false" data-lightgallery="group">
-          <!-- Primer imagen--><a class="thumbnail-thin" href="images/temaprov.jpg" data-lightgallery="item">
-            <div class="thumbnail-thin-inner"><img class="thumbnail-thin-image" src="images/temaprov.jpg" alt="" width="320" height="320"/>
-            </div></a>
-          <!-- Segunda Imagen--><a class="thumbnail-thin" href="images/carru1.jpg" data-lightgallery="item">
-            <div class="thumbnail-thin-inner"><img class="thumbnail-thin-image" src="images/carru1.jpg" alt="" width="320" height="320"/>
-            </div></a>
-          <!-- Tercera Imagen--><a class="thumbnail-thin" href="images/carru2.jpg" data-lightgallery="item">
-            <div class="thumbnail-thin-inner"><img class="thumbnail-thin-image" src="images/carru2.jpg" alt="" width="320" height="320"/>
-            </div></a>
-          <!-- Cuarta imagen--><a class="thumbnail-thin" href="images/carru3.jpg" data-lightgallery="item">
-            <div class="thumbnail-thin-inner"><img class="thumbnail-thin-image" src="images/carru3.jpg" alt="" width="320" height="320"/>
-            </div></a>
-          <!-- Quinta imagen--><a class="thumbnail-thin" href="images/temaprov.jpg" data-lightgallery="item">
-            <div class="thumbnail-thin-inner"><img class="thumbnail-thin-image" src="images/temaprov.jpg" alt="" width="320" height="320"/>
-            </div></a>
-          <!-- Sexta imagen--><a class="thumbnail-thin" href="images/temaprov.jpg" data-lightgallery="item">
-            <div class="thumbnail-thin-inner"><img class="thumbnail-thin-image" src="images/temaprov.jpg" alt="" width="320" height="320"/>
-            </div></a>
-        </div>
-      </section> 
-    </div>
+     
     <!--Barra de regreso a top de pagina-->
     <div class="snackbars" id="form-output-global"></div>
     <!--Scripts-->
@@ -420,7 +362,7 @@
         color: white; /* Texto en color blanco */
         padding: 15px;
         text-align: center;
-        font-size: 14px;
+        font-size: 10px;
         border-radius: 10px; /* Bordes redondeados */
         margin: 20px; /* Separación del contenido */
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */

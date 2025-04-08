@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Aplicaciones Multimedia</title>
+    <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/upiicsa.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Work+Sans:300,400,500,700%7CZilla+Slab:300,400,500,700,700i%7CGloria+Hallelujah">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  </head>
+  <body>
+    <style>
+      @keyframes mover {
+          0% { transform: translateX(0); }
+          50% { transform: translateX(20px); } /* Se mueve a la derecha */
+          100% { transform: translateX(0); } /* Vuelve a la posición original */
+      }
+  
+      .imagen-animada {
+          width: 300px;
+          animation: mover 2s infinite ease-in-out; /* Movimiento constante */
+      }
+      </style>
+      <style>
+    .imagen-hover {
+        width: 300px; /* Tamaño de la imagen */
+        transition: transform 0.5s ease-in-out; /* Transición suave */
+    }
+
+    .imagen-hover:hover {
+        transform: scale(1.1); /* Aumenta de tamaño al pasar el mouse */
+    }
+</style>
+<style>
+  .imagen-zoom-rotar {
+      width: 300px;
+      transition: transform 0.5s ease-in-out;
+  }
+
+  .imagen-zoom-rotar:hover {
+      transform: scale(1.2) rotate(10deg);
+  }
+</style>
+<style>
+  @keyframes zigzag {
+      0% { transform: translate(0, 0); }
+      25% { transform: translate(20px, 10px); }
+      50% { transform: translate(-20px, -10px); }
+      75% { transform: translate(20px, -10px); }
+      100% { transform: translate(0, 0); }
+  }
+
+  .imagen-zigzag {
+      width: 300px;
+      animation: zigzag 3s infinite ease-in-out;
+  }
+</style>
+
+  </style>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="preloader">
+      <div class="preloader-logo"><a class="brand" href="index.html"></a>
+      </div>
+      <div class="preloader-body">
+      </div>
+
+    </div>
+    <div class="page">
+      <header class="page-header">
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <div class="rd-navbar-panel">
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <div class="rd-navbar-brand"><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/upiicsa2.jpg" alt="" width="300" height="60"/><img class="brand-logo-light" src="images/upiicsa.jpg" alt="" width="300" height="60"/></a>
+                  </div>
+                </div>
+                <div class="rd-navbar-nav-wrap">
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">INICIO</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="temario.html">CONTENIDO</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">NOTICIAS</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="integrantes.html">INTEGRANTES</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="acercade.html">ACERCA DE</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        
+              <div class="titulo-fijo" id="tituloFijo">
+                Aplicaciones en el computo ubicuo.
+            </div>
+              <style>
+
+                /* Barra de navegación fija en la parte superior */
+                .navbar {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 60px; /* Altura de la barra */
+                    background-color: #2c3e50;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 18px;
+                    font-weight: bold;
+                    z-index: 1000; /* Asegura que esté sobre otros elementos */
+                }
+            
+                /* Título fijo debajo de la barra de navegación */
+                .titulo-fijo {
+                    position: fixed;
+                    top: 75px; /* Debe ser igual a la altura de la barra */
+                    left: 0;
+                    width: 100%;
+                    background-color: #34495e;
+                    color: white;
+                    text-align: center;
+                    padding: 15px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    z-index: 999; /* Un poco menor que la barra de navegación */
+                }
+            
+                /* Contenido para hacer scroll */
+                .contenido {
+                    margin-top: 120px; /* Espacio para no tapar el contenido con la barra y el título */
+                    padding: 20px;
+                    font-size: 16px;
+                }
+            </style>
+            
+            <!-- Barra de navegación fija -->
+  
+            
+            <!-- Título fijo debajo de la barra -->
+           
+            
+            <!-- Contenido para probar el scroll -->
+         
+            
+              
+            
+      </header>
+      <br>
+      <br>
+      <div class="container">
+      <h3>1.1.3 Aplicaciones en el coomputo ubicuo</h3>
+      </div>
+       <!-- Base de imagenes lateral derecha -->
+        <div class="container">
+          <div class="row row-50 flex-lg-row-reverse">
+            <div class="col-xl-4">
+              <ul class="list-lg">
+                
+                <li>
+                  <p><img  src="images/ubicua1.png" alt="" class="imagen-animada" width="340" height="250" /></p><BR>
+                      <BR>
+                      <BR>
+                      <BR>
+                      <BR>
+                    <p><img class="imagen-hover" src="images/ubicua2.jpg" alt=""  width="340" height="250"/></p>
+                 </li>
+              </ul>
+            </div>
+      <!-- contenido lateral derecho -->
+            <div class="col-xl-8">
+              
+              <ul class="list-xl">
+                <li>
+                  <h1 class="h1fixed"></h1>
+                  <p>
+                    El avance de la tecnología ha permitido que la informática se integre de manera natural en la vida cotidiana, 
+                    dando origen al concepto de cómputo ubicuo. Este paradigma se basa en la omnipresencia de dispositivos 
+                    inteligentes conectados, permitiendo el acceso a la información y servicios en cualquier momento y lugar. 
+                    En este contexto, las aplicaciones multimedia desempeñan un papel fundamental, facilitando la interacción 
+                    entre usuarios y sistemas, mejorando la experiencia y optimizando diversos procesos. En este ensayo, se 
+                    analizarán los principales tipos de aplicaciones multimedia en el cómputo ubicuo, sus beneficios y los desafíos que conllevan.
+                    <br>
+                    <br>
+                    El cómputo ubicuo se refiere a la integración de la tecnología en el entorno cotidiano, permitiendo el acceso a la
+                     información en cualquier momento y lugar. Las aplicaciones multimedia en este contexto incluyen sistemas de aprendizaje ubicuo
+                      que utilizan dispositivos móviles y tecnologías emergentes para ofrecer experiencias educativas adaptativas y personalizadas.  
+                  </p>
+                </li>
+                <li> 
+                  <p>
+                    
+                    Uno de los principales usos de las aplicaciones multimedia en el cómputo ubicuo se encuentra en los dispositivos inteligentes y 
+                    el Internet de las Cosas (IoT). Tecnologías como los asistentes virtuales (Google Assistant, Alexa y Siri) integran interfaces 
+                    multimodales que combinan voz, texto e imágenes para mejorar la comunicación con los usuarios. Estos sistemas permiten realizar
+                     tareas cotidianas como la gestión del hogar inteligente, la organización de agendas y la automatización de procesos industriales.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <!--contenido con imagen lateral izquierdo -->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xl-10">
+              
+              <div class="row row-30">
+                <div class="col-md-6">
+                  <br>
+                   <p><img class="imagen-zoom-rotar" src="images/ubicua3.jpg" alt="" width="340" height="250"/></p>
+                </div>
+                <div class="col-md-6">
+                <br>
+                  <br>
+  
+                  <p>
+                    El cómputo ubicuo también ha impactado la movilidad y la navegación. Aplicaciones como Google Maps,
+                     Waze y Apple Maps integran multimedia avanzada, combinando imágenes satelitales, simulaciones 
+                     en 3D y datos de tráfico en tiempo real para optimizar la experiencia del usuario. Estas 
+                     plataformas no solo facilitan el desplazamiento en entornos urbanos, sino que también mejoran 
+                     la accesibilidad para personas con discapacidades mediante funciones de guiado por voz y realidad aumentada.
+                </p> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="container">
+          <div class="row row-50 flex-lg-row-reverse">
+            <div class="col-xl-4">
+              <ul class="list-lg">
+                
+                <li>
+                  <p><img  src="images/ubicua4.jpg" alt="" class="imagen-animada" width="340" height="250" /></p><BR>
+                      <BR>
+                      <BR>
+                      <BR>
+                      <BR>
+                    <p><img class="imagen-zigzag" src="images/ubicua5.jpg" alt=""  width="340" height="250"/></p>
+                      <BR>
+                      <br>
+                    <p><img class="imagen-animada" src="images/ubicua6.png" alt=""  width="340" height="250"/></p>
+                 </li>
+              </ul>
+            </div>
+  
+       <!-- contenido lateral derecho -->
+            <div class="col-xl-8">
+              
+              <ul class="list-xl">
+                <li>
+                  <h1 class="h1fixed"></h1>
+                  <p>
+                    El avance de la tecnología ha permitido que la informática se integre de manera natural en la vida cotidiana, dando origen al 
+                    concepto de cómputo ubicuo. Este paradigma se basa en la omnipresencia de dispositivos inteligentes conectados, permitiendo el 
+                    acceso a la información y servicios en cualquier momento y lugar. En este contexto, las aplicaciones multimedia desempeñan un papel
+                     fundamental, facilitando la interacción entre usuarios y sistemas, mejorando la experiencia y optimizando diversos procesos. En 
+                     este ensayo, se analizarán los principales tipos de aplicaciones multimedia en el cómputo ubicuo, sus beneficios y los desafíos 
+                     que conllevan.
+                    <br>
+                    <br>
+                    El cómputo ubicuo se refiere a la integración de la tecnología en el entorno cotidiano, permitiendo el acceso a la información 
+                    en cualquier momento y lugar. Las aplicaciones multimedia en este contexto incluyen sistemas de aprendizaje ubicuo que utilizan 
+                    dispositivos móviles y tecnologías emergentes para ofrecer experiencias educativas adaptativas y personalizadas. 
+                  </p>
+                </li>
+                <li> 
+                  <p>
+                    
+                    Otro aspecto fundamental del cómputo ubicuo es la personalización del contenido multimedia a través de la inteligencia 
+                    artificial. Servicios de streaming como Netflix, Spotify y YouTube utilizan algoritmos avanzados para analizar las preferencias
+                     del usuario y recomendar contenido adaptado a sus intereses. Esta tecnología no solo mejora la experiencia del usuario, 
+                     sino que también optimiza la distribución de información en tiempo real.
+                  </p>
+                  <BR>
+
+              
+                  </BR>
+                  <p>
+                    Sin embargo, a pesar de sus beneficios, la implementación de aplicaciones multimedia en el cómputo ubicuo enfrenta diversos 
+                    desafíos. La seguridad y privacidad de los datos es una de las principales preocupaciones, ya que el constante flujo de 
+                    información en dispositivos interconectados aumenta el riesgo de ataques cibernéticos. Además, la dependencia de la 
+                    conectividad y la infraestructura tecnológica puede generar desigualdades en el acceso a estas herramientas, especialmente
+                     en regiones con menor desarrollo digital.
+                  </p>
+                  
+              
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--contenido con imagen lateral izquierdo 
+      <section class="section section-lg bg-default">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 col-xl-8">
+              
+              <div class="row row-30">
+                <div class="col-md-6"><img class="imagen-zoom-rotar" src="#" alt="" width="340" height="250"/>
+                </div>
+                <div class="col-md-6">
+                  <p> 
+                </p> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      Texto lateral derecho de videoreproductor 
+      <section class="section section-lg bg-default">
+        <div class="container">
+          <div class="row row-50 justify-content-center justify-content-xl-between flex-lg-row-reverse">
+            <div class="col-md-11 col-lg-6 col-xl-5">
+              <div class="box-1">
+                <h2></h2>
+                <p>Las aplicaciones multimedia en la educación son recursos que combinan texto, imágenes, audio, video y animación para enseñar y aprender. Estas aplicaciones pueden ayudar a los estudiantes a desarrollar habilidades digitales, como la creatividad, el pensamiento crítico y la resolución de problemas. </p>
+              </div>
+            </div>
+            video incrustado
+            <div class="col-md-11 col-lg-6">
+              <div class="thumbnail-media" style="background-image: url(images/TIPOS1.jpg);"><a class="icon thumbnail-media-icon mdi mdi-play-circle-outline" href="https://www.youtube.com/watch?v=4AjHxqt2WjM" data-lightgallery="item"></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+-->
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+  <style>
+     /*Derechos de autos*/
+    .footer {
+        background-color: #2c3e50; /* Color de fondo oscuro */
+        color: white; /* Texto en color blanco */
+        padding: 15px;
+        text-align: center;
+        font-size: 10px;
+        border-radius: 10px; /* Bordes redondeados */
+        margin: 20px; /* Separación del contenido */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+    }
+    .footer a {
+        color: #1abc9c; /* Color llamativo para enlaces */
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .footer a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<footer class="footer">
+    <p>© 2025 Instituto Político Nacional. Todos los derechos reservados.</p>
+    <p>Este sitio web y su contenido son propiedad del Instituto Político Nacional. 
+    Queda prohibida la reproducción, distribución o modificación total o parcial 
+    sin autorización previa por escrito.</p>
+    <p>Sitio web desarrollado por la Universidad UPIICSA.</p>
+    <p>Para consultas o permisos de uso, contáctenos en 
+    <a href="mailto:contacto@institutopolitico.com">contacto@institutopolitico.com</a>.</p>
+</footer>
+</html>

@@ -43,6 +43,7 @@
 .imagen-zoom-rotar:hover {
     transform: scale(1.2) rotate(10deg);
 }
+
 </style>
 <style>
 @keyframes zigzag {
@@ -58,11 +59,41 @@
     animation: zigzag 3s infinite ease-in-out;
 }
 </style>
+<style>
+  .center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+.divisor-texto {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .divisor-texto::before,
+    .divisor-texto::after {
+        content: "";
+        flex: 1;
+        border-bottom: 2px solid #2c3e50;
+    }
+
+    .divisor-texto:not(:empty)::before {
+        margin-right: .75em;
+    }
+
+    .divisor-texto:not(:empty)::after {
+        margin-left: .75em;
+    }
+</style>
+ 
 
   <body>
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <div class="preloader">
-      <div class="preloader-logo"><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/upiicsa.jpg" alt="" width="245" height="50"/><img class="brand-logo-light" src="images/upiicsa.jpg" alt="" width="245" height="50"/></a>
+      <div class="preloader-logo"><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/upiicsa.jpg" alt="" width="245" height="50" /><img class="brand-logo-light" src="images/upiicsa.jpg" alt="" width="245" height="50"/></a>
       </div>
       <div class="preloader-body">
         <div class="cssload-container">
@@ -78,19 +109,21 @@
             <div class="rd-navbar-main-outer">
               <div class="rd-navbar-main">
                 <div class="rd-navbar-panel">
-                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                  <div class="rd-navbar-brand"><a class="brand" href="index.html"><img class="imagen-zoom-rotar" src="images/upiicsa.jpg" alt="" width="300" height="60"/><img class="brand-logo-light" src="images/upiicsa.jpg" alt="" width="300" height="60"/></a>
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"></button>
+                  <div class="rd-navbar-brand"><a class="brand" href="index.html"><img class="imagen-zoom-rotar" src="images/upiicsa2.jpg" alt="" width="100" height="80"/><img class="brand-logo-light" src="images/upiicsa.jpg" alt="" width="100" height="80"/></a>
                   </div>
                 </div>
                 <div class="rd-navbar-nav-wrap">
                   <ul class="rd-navbar-nav">
                     <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">INICIO</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">CONTENIDO</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="temario.html">CONTENIDO</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">NOTICIAS</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="noticias.html">NOTICIAS</a>
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="integrantes.html">INTEGRANTES</a>
+                    </li>
+                     <li class="rd-nav-item"><a class="rd-nav-link" href="acercade.html">ACERCA DE</a>
                     </li>
                   </ul>
                 </div>
@@ -162,139 +195,416 @@
           
               <!-- TEMARIO CON IMAGENES TEMA 1 -->
               <div class="post-minimal">
-               <figure class="post-minimal-media"><a href="tema1.html"><img class="post-minimal-image" src="images/1.1.png" alt="" width="370" height="260"/></a></figure>
-                <div class="post-minimal-meta">
-                  <ul class="list-inline">
-                    <li class="list-inline-item">Autor: </li>
-                    <li class="list-inline-itema"><a href="tema1.html">compañero1</a></li>
-                  </ul>
-                </div>
-                <h4 class="post-minimal-title"><a href="tema1.html">1.1 Tipos de aplicaciones multimedia</a></h4>
+               <a href="No.1.1.html"><img src="images/1.1copia1.0.png" alt="" style="float:center; width: 400px; height: 160px;"/></a>
+               
+                <h4 class="post-minimal-title"><a href="No.1.1.html">1.1 Tipos de aplicaciones multimedia</a></h4>
               </div>
             </div>
             <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".2s">
               <!-- TEMA 2 CON IMAGNE 2-->
               <div class="post-minimal">
-                <figure class="post-minimal-media"><a href="#"><img class="post-minimal-image" src="images/img1.jpg" alt="" width="370" height="260"/></a></figure>
-                <div class="post-minimal-meta">
-                  <ul class="list-inline">
-                    <li class="list-inline-item">Autor: </li>
-                    <li class="list-inline-itema"><a href="tema2.html">compañero2</a></li>
-                  </ul>
-                </div>
-                <h4 class="post-minimal-title"><a href="tema2.html">1.1.1 En la educación:</a></h4>
+                <a href="No.1.1.1.html"><img class src="images/img1.0.jpg" alt="" style="float:center ;width: 400px; height:160px;"/></a>
+                
+                <h4 class="post-minimal-title"><a href="No.1.1.1.html">1.1.1 En la educación:</a></h4>
               </div>
             </div>
+
             <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
               <!-- TEMA 3-->
               <div class="post-minimal">
-                <figure class="post-minimal-media"><a href="#"><img class="post-minimal-image" src="images/negocio1.jpg" alt="" width="370" height="260"/></a></figure>
-                <div class="post-minimal-meta">
-                  <ul class="list-inline">
-                    <li class="list-inline-item">Autor: </li>
-                    <li class="list-inline-itema"><a href="tema3.html">compañero3</a></li>
-                  </ul>
-                </div>
-                <h4 class="post-minimal-title"><a href="tema3.html">1.1.2 En los negocios:</a></h4>
+                <a href="No.1.1.2.html"><img src="images/comercio.jpg" alt="" style="float:center; width:400px; height: 160px;;"/></a>
+                
+                <h4 class="post-minimal-title"><a href="No.1.1.2.html">1.1.2 En los negocios:</a></h4>
               </div>
             </div>
             <div class="col-sm-6 col-lg-4 wow fadeIn">
               <!-- tEMA 4-->
               <div class="post-minimal">
-                <figure class="post-minimal-media"><a href="tema4.html"><img class="post-minimal-image" src="images/ubiq1.jpg" alt="" width="370" height="260"/></a></figure>
-                <div class="post-minimal-meta">
-                  <ul class="list-inline">
-                    <li class="list-inline-item">Autor: </li>
-                    <li class="list-inline-itema"><a href="tema4.html">compañero4</a></li>
-                  </ul>
-                </div>
-                <h4 class="post-minimal-title"><a href="tema4.html">1.1.3 En el computo ubicuo:</a></h4>
+                <a href="No.1.1.3.html"><img  src="images/comercio.jpg" alt="" style="float:center ; width:400px;height: 160px;"/></a>
+                
+                <h4 class="post-minimal-title"><a href="No.1.1.3.html">1.1.3 En el computo ubicuo:</a></h4>
               </div>
             </div>
             <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".2s">
               <!-- TEMA 5-->
               <div class="post-minimal">
-                <figure class="post-minimal-media"><a href="#"><img class="post-minimal-image" src="images/TEMA1.jpeg" alt="" width="370" height="260"/></a></figure>
-                <div class="post-minimal-meta">
-                  <ul class="list-inline">
-                    <li class="list-inline-item">Autor: </li>
-                    <li class="list-inline-itema"><a href="#">compañero5</a></li>
-                  </ul>
-                </div>
-                <h4 class="post-minimal-title"><a href="#">1.1.4 En la autoría:</a></h4>
+                <a href="No.1.1.4.html"><img src="images/ubicuo1.jpg" alt="" style="float:center ; width:400px ;height: 160px;"/></a>
+                
+                <h4 class="post-minimal-title"><a href="No.1.1.4.html">1.1.4 En la autoría:</a></h4>
               </div>
             </div>
+
             <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
               <!--TEMA 6-->
               <div class="post-minimal">
-                <figure class="post-minimal-media"><a href="#"><img class="post-minimal-image" src="images/1.1.2.png" alt="" width="370" height="260"/></a></figure>
+                <a href="No.1.1.5.html"><img src="images/entretenimiento.jpg" alt="" style="float:center ; width:400px;height: 160px ;"/></a>
                 <div class="post-minimal-meta">
                   <ul class="list-inline">
-                    <li class="list-inline-item">Autor: </li>
-                    <li class="list-inline-itema"><a href="#">compañero6</a></li>
+                    
                   </ul>
                 </div>
-                <h4 class="post-minimal-title"><a href="#">1.1.5 En el entretenimiento:</a></h4>
+                <h4 class="post-minimal-title"><a href="No.1.1.5.html">1.1.5 En el entretenimiento:</a></h4>
               </div>
               </div>
+
+              <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
+                <!--TEMA 1.2-->
+                <div class="post-minimal">
+                  <a href="No.1.2.html"><img src="images/realidadvirtual.jpg" alt="" style="float:center ; width:400px;height:160px;"/></a>
+                  <div class="post-minimal-meta">
+                    <ul class="list-inline">
+                      
+                    </ul>
+                  </div>
+                  <h4 class="post-minimal-title"><a href="No.1.2.html">1.2 La realiadad virtual:</a></h4>
+                </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
+                  <!--TEMA 1.2.1-->
+                  <div class="post-minimal">
+                    <a href="No.1.2.1.html"><img src="images/caracteristicasdevirtual.png" alt="" style="float:center ; width:400px;height:160px;"/></a>
+                    <div class="post-minimal-meta">
+                      <ul class="list-inline">
+                        
+                      </ul>
+                    </div>
+                    <h4 class="post-minimal-title"><a href="No.1.2.1.html">1.2.1 Caracteristicas del desarrollo:</a></h4>
+                  </div>
+                  </div>
+                
+                  <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
+                    <!--TEMA 1.2.2-->
+                    <div class="post-minimal">
+                      <a href="No.1.2.2.html"><img src="images/setvirtual.jpg" alt="" style="float:center ; width:400px;height:160px;"/></a>
+                      <div class="post-minimal-meta">
+                        <ul class="list-inline">
+                          
+                        </ul>
+                      </div>
+                      <h4 class="post-minimal-title"><a href="No.1.2.2.html">1.2.2 Actores, escenarios y set´s virtuales:</a></h4>
+                    </div>
+                    </div>
+                    
+                    <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
+                      <!--TEMA 1.2.3-->
+                      <div class="post-minimal">
+                        <a href="No.1.2.3.html"><img src="images/tecnolgiavirtual.webp" alt="" style="float:center ; width:400px;height:160px;"/></a>
+                        <div class="post-minimal-meta">
+                          <ul class="list-inline">
+                            
+                          </ul>
+                        </div>
+                        <h4 class="post-minimal-title"><a href="No.1.2.3.html">1.1.5 Tecnologia de realidad virtual:</a></h4>
+                      </div>
+                      </div>
+     
+                      <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
+                        <!--TEMA 1.2.4-->
+                        <div class="post-minimal">
+                          <a href="No.1.2.4.html"><img src="images/aplicaiconesvirtuales.jpg" alt="" style="float:center ; width:400px;height:160px;"/></a>
+                          <div class="post-minimal-meta">
+                            <ul class="list-inline">
+                              
+                            </ul>
+                          </div>
+                          <h4 class="post-minimal-title"><a href="No.1.2.4.html">1.2.4 Aplicaciones virtuales:</a></h4>
+                        </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
+                          <!--TEMA 1.3-->
+                          <div class="post-minimal">
+                            <a href="No.1.3.html"><img src="images/videojuegoes.webp" alt="" style="float:center ; width:400px;height:160px;"/></a>
+                            <div class="post-minimal-meta">
+                              <ul class="list-inline">
+                                
+                              </ul>
+                            </div>
+                            <h4 class="post-minimal-title"><a href="No.1.3.html">1.3 Los video juegos:</a></h4>
+                          </div>
+                          </div>
+
+                          <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
+                            <!--TEMA 1.3.1-->
+                            <div class="post-minimal">
+                              <a href="No.1.3.1.html"><img src="images/desarrollovideojuegos.jpg" alt="" style="float:center ; width:400px;height:160px;"/></a>
+                              <div class="post-minimal-meta">
+                                <ul class="list-inline">
+                                  
+                                </ul>
+                              </div>
+                              <h4 class="post-minimal-title"><a href="No.1.3.1.html">1.1.5 Caracteristicas de desarrollo:</a></h4>
+                            </div>
+                            </div>
+
+                            <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
+                              <!--TEMA 1.3.2-->
+                              <div class="post-minimal">
+                                <a href="No.1.3.2.html"><img  src="images/mecanisosvideojuegos.jpg" alt="" style="float:center ; width:400px;height:160px;"/></a>
+                                <div class="post-minimal-meta">
+                                  <ul class="list-inline">
+                                    
+                                  </ul>
+                                </div>
+                                <h4 class="post-minimal-title"><a href="No.1.3.2.html">1.3.2 Mecanismos de funcionamiento de los videojuegos:</a></h4>
+                              </div>
+                              </div>
+
+                              <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
+                                <!--TEMA 1.3.3-->
+                                <div class="post-minimal">
+                                  <a href="No.1.3.3.html"><img src="images/nucelovideojuago.jpg" alt="" style="float:center ; width:400px;height:160px;"/></a>
+                                  <div class="post-minimal-meta">
+                                    <ul class="list-inline">
+                                      
+                                    </ul>
+                                  </div>
+                                  <h4 class="post-minimal-title"><a href="No.1.3.3.html">1.3.3 Uso y aplicacion del Engine como nucleo del videojuego:</a></h4>
+                                </div>
+                                </div>
+              
+                                <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
+                                  <!--TEMA 1.3.4-->
+                                  <div class="post-minimal">
+                                    <a href="No.1.3.4.html"><img  src="images/tecnologiaabierta.webp" alt="" style="float:center ; width:400px;height:160px;"/></a>
+                                    <div class="post-minimal-meta">
+                                      <ul class="list-inline">
+                                        
+                                      </ul>
+                                    </div>
+                                    <h4 class="post-minimal-title"><a href="No.1.3.4.html">1.3.4 Tecnologia abierta para implementar un videojuego:</a></h4>
+                                  </div>
+                                  </div>
+
+                                  <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
+                                    <!--TEMA 1.4-->
+                                    <div class="post-minimal">
+                                      <a href="No.1.4.html"><img src="images/realidadaumentada.webp" alt="" style="float:center ; width:400px;height:160px;"/></a>
+                                      <div class="post-minimal-meta">
+                                        <ul class="list-inline">
+                                          
+                                        </ul>
+                                      </div>
+                                      <h4 class="post-minimal-title"><a href="No.1.4.html">1.4 La realidad aumentada:</a></h4>
+                                    </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
+                                      <!--TEMA 1.4.1-->
+                                      <div class="post-minimal">
+                                        <a href="No.1.4.1.html"><img  src="images/caracteristicasrealidadaumentada.jpg" alt="" style="float:center ; width:400px;height:160px;"/></a>
+                                        <div class="post-minimal-meta">
+                                          <ul class="list-inline">
+                                            
+                                          </ul>
+                                        </div>
+                                        <h4 class="post-minimal-title"><a href="No.1.4.1.html">1.4.1 Caracteristicas de desarrollo:</a></h4>
+                                      </div>
+                                      </div>
+
+                                      <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
+                                        <!--TEMA 1.4.2-->
+                                        <div class="post-minimal">
+                                          <a href="No.1.4.2.html"><img src="images/tecnologiarealidadaumentada.webp" alt="" style="float:center ; width:400px;height:160px;"/></a>
+                                          <div class="post-minimal-meta">
+                                            <ul class="list-inline">
+                                              
+                                            </ul>
+                                          </div>
+                                          <h4 class="post-minimal-title"><a href="No.1.4.2.html">1.4.2 Tecnologia de la realidad aumentada:</a></h4>
+                                        </div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
+                                          <!--TEMA 1.4.3-->
+                                          <div class="post-minimal">
+                                            <a href="No.1.4.3.html"><img src="images/aplicacionesrealidadaumentada.jpg" alt="" style="float:center ; width:400px;height:160px;"/></a>
+                                            <div class="post-minimal-meta">
+                                              <ul class="list-inline">
+                                                
+                                              </ul>
+                                            </div>
+                                            <h4 class="post-minimal-title"><a href="No.1.4.3.html">1.4.3 Areas de aplicacion de la realidad aumentada:</a></h4>
+                                          </div>
+                                          </div>
+
+                                          <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
+                                            <!--TEMA 1.5.1-->
+                                            <div class="post-minimal">
+                                              <a href="No.1.5.1.html"><img src="images/cudiadesdigitales.jpg" alt="" style="float:center ; width:400px;height:160px;"/></a>
+                                              <div class="post-minimal-meta">
+                                                <ul class="list-inline">
+                                                  
+                                                </ul>
+                                              </div>
+                                              <h4 class="post-minimal-title"><a href="No.1.5.1.html">1.5.1 Desarrollo de las cuidades digitales:</a></h4>
+                                            </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
+                                              <!--TEMA 1.5.2-->
+                                              <div class="post-minimal">
+                                                <a href="No.1.5.2.html"><img src="images/usodecuidadesdigitales.jpg" alt="" style="float:center ; width:400px;height:160px;"/></a>
+                                                <div class="post-minimal-meta">
+                                                  <ul class="list-inline">
+                                                    
+                                                  </ul>
+                                                </div>
+                                                <h4 class="post-minimal-title"><a href="No.1.5.2.html">1.5.2 Uso y aplicacion de la multimedia en las cudiades digitales:</a></h4>
+                                              </div>
+                                              </div>
+            
+          
+          
+              
+         
+               
+
           </div> <!--<a class="button button-lg button-primary-gradient wow fadeIn" data-wow-delay=".2s" href="#"><span>Ver todo</span></a>-->
         </div>      
        </div>
-        <section class="section section-lg bg-gray-100 text-center">
-          <div class="container">
-            <h2 class="wow fadeIn">Programa academico</h2>
-            <p class="wow fadeIn" data-wow-delay=".2s"><span class="text-gray-900" style="max-width: 570px;">Construye productos muliimedia a partir de la tendencia del mercado, técnicas, métodos y el proceso de
-              producción.</span></p>
-            <div class="row row-30 row-xl-90 justify-content-center">
-              <div class="col-sm-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay=".2s">
-              <!-- Programa sintetico de la unidad de aprendizaje -->
-                <article class="box-classic"><a class="icon box-classic-icon linearicons-chip" href="Optativa 3 - Aplicaciones Multimedia 2010.PDF" target="_blank"></a><a class="box-classic-main" href="#">
-                    <h4 class="box-classic-title">Programa</h4>
-                    <div class="box-classic-inner">
-                      <p>Programa Sintetico Ciencias de la Informatica Plan 06/10</p>
-                    </div></a></article>
-              </div>
-            </div>
+        
+        
+        </div> 
+
+        <div class="divisor-texto"><h2>Unidad 2</h2></div>
+
+        <div class="row row-30 row-md-50 row-xl-70">
+
+        <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".2s">
+        
+         <!-- TEMARIO CON IMAGENES TEMA 1 -->
+         <div class="post-minimal">
+          <a href="No.2.1.html"><img src="images/2.1.png" alt="" style="float:center; width: 400px; height: 160px;"/></a>
           
-        </section>
-      </section>
-      <!-- Gallery-->
-      <section class="section oh text-center">
-        <div class="owl-carousel owl-carousel-dots-space wow fadeIn" data-items="2" data-sm-items="3" data-md-items="4" data-lg-items="5" data-xl-items="6" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="false" data-margin="0" data-mouse-drag="false" data-lightgallery="group">
-          <!-- Thumbnail Thin--><a class="thumbnail-thin" href="images/temaprov.jpg" data-lightgallery="item">
-            <div class="thumbnail-thin-inner"><img class="thumbnail-thin-image" src="images/temaprov.jpg" alt="" width="320" height="320"/>
-            </div></a>
-          <!-- Thumbnail Thin--><a class="thumbnail-thin" href="images/temaprov.jpg" data-lightgallery="item">
-            <div class="thumbnail-thin-inner"><img class="thumbnail-thin-image" src="images/temaprov.jpg" alt="" width="320" height="320"/>
-            </div></a>
-          <!-- Thumbnail Thin--><a class="thumbnail-thin" href="images/temaprov.jpg" data-lightgallery="item">
-            <div class="thumbnail-thin-inner"><img class="thumbnail-thin-image" src="images/temaprov.jpg" alt="" width="320" height="320"/>
-            </div></a>
-          <!-- Thumbnail Thin--><a class="thumbnail-thin" href="images/temaprov.jpg" data-lightgallery="item">
-            <div class="thumbnail-thin-inner"><img class="thumbnail-thin-image" src="images/temaprov.jpg" alt="" width="320" height="320"/>
-            </div></a>
-          <!-- Thumbnail Thin--><a class="thumbnail-thin" href="images/temaprov.jpg" data-lightgallery="item">
-            <div class="thumbnail-thin-inner"><img class="thumbnail-thin-image" src="images/temaprov.jpg" alt="" width="320" height="320"/>
-            </div></a>
-          <!-- Thumbnail Thin--><a class="thumbnail-thin" href="images/temaprov.jpg" data-lightgallery="item">
-            <div class="thumbnail-thin-inner"><img class="thumbnail-thin-image" src="images/temaprov.jpg" alt="" width="320" height="320"/>
-            </div></a>
+           <h4 class="post-minimal-title"><a href="No.2.1.html">2.1 Las tecnologias de desarrollo multimedia.</a></h4>
+         </div>
+       </div>
+       <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".2s">
+         <!-- TEMA 2 CON IMAGNE 2-->
+         <div class="post-minimal">
+           <a href="No.2.1.1.html"><img class src="images/2.1.1.jpg" alt="" style="float:center ;width: 400px; height:160px;"/></a>
+           
+           <h4 class="post-minimal-title"><a href="No.2.1.1.html">2.1.1 Lenguajes de programacion multimedia. </a></h4>
+         </div>
+       </div>
+
+       <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
+         <!-- TEMA 3-->
+         <div class="post-minimal">
+           <a href="No.2.1.2.html"><img src="images/2.1.2.png" alt="" style="float:center; width:400px; height: 160px;;"/></a>
+           
+           <h4 class="post-minimal-title"><a href="No.2.1.2.html">2.1.2 Caracteristicas de desarrollo de los lenguajes de programacion multimedia.</a></h4>
+         </div>
+       </div>
+       <div class="col-sm-6 col-lg-4 wow fadeIn">
+         <!-- tEMA 4-->
+         <div class="post-minimal">
+           <a href="No.2.1.3.html"><img  src="images/2.1.3.webp" alt="" style="float:center ; width:400px;height: 160px;"/></a>
+           
+           <h4 class="post-minimal-title"><a href="No.2.1.3.html">2.1.3 Plataformas y herramientas de programacion multimedia</a></h4>
+         </div>
+       </div>
+       <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".2s">
+         <!-- TEMA 5-->
+         <div class="post-minimal">
+           <a href="No.2.1.4.html"><img src="images/2.1.4.jpg" alt="" style="float:center ; width:400px ;height: 160px;"/></a>
+           
+           <h4 class="post-minimal-title"><a href="No.2.1.4.html">2.1.4 Programacion de dispositivos moviles.</a></h4>
+         </div>
+       </div>
+
+       <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
+         <!--TEMA 6-->
+         <div class="post-minimal">
+           <a href="No.2.2.html"><img src="images/2.2.jpg" alt="" style="float:center ; width:400px;height: 160px ;"/></a>
+           <div class="post-minimal-meta">
+             <ul class="list-inline">
+               
+             </ul>
+           </div>
+           <h4 class="post-minimal-title"><a href="No.2.2.html">2.2 Tecnologias para la web.:</a></h4>
+         </div>
+         </div>
+
+         <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
+           <!--TEMA 1.2-->
+           <div class="post-minimal">
+             <a href="No.2.2.1.html"><img src="images/2.2.1.jpg" alt="" style="float:center ; width:400px;height:160px;"/></a>
+             <div class="post-minimal-meta">
+               <ul class="list-inline">
+                 
+               </ul>
+             </div>
+             <h4 class="post-minimal-title"><a href="No.2.2.1.html">2.2.1 Sistemas de Gestores de Contenidos.</a></h4>
+           </div>
+           </div>
+
+           <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
+             <!--TEMA 1.2.1-->
+             <div class="post-minimal">
+               <a href="No.2.2.2.html"><img src="images/2.1.3.webp" alt="" style="float:center ; width:400px;height:160px;"/></a>
+               <div class="post-minimal-meta">
+                 <ul class="list-inline">
+                   
+                 </ul>
+               </div>
+               <h4 class="post-minimal-title"><a href="No.2.2.2.html">2.2.2 Aquitectura Cliente_Servidor.</a></h4>
+             </div>
+             </div>
+           
+             <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
+               <!--TEMA 1.2.2-->
+               <div class="post-minimal">
+                 <a href="No.2.2.3.html"><img src="images/2.2.3.jpg" alt="" style="float:center ; width:400px;height:160px;"/></a>
+                 <div class="post-minimal-meta">
+                   <ul class="list-inline">
+                     
+                   </ul>
+                 </div>
+                 <h4 class="post-minimal-title"><a href="No.2.2.3.html">2.2.3 Servicios Web.</a></h4>
+               </div>
+               </div>
+               
+               <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
+                 <!--TEMA 1.2.3-->
+                 <div class="post-minimal">
+                   <a href="No.2.2.4.html"><img src="images/2.2.4.jpg" alt="" style="float:center ; width:400px;height:160px;"/></a>
+                   <div class="post-minimal-meta">
+                     <ul class="list-inline">
+                       
+                     </ul>
+                   </div>
+                   <h4 class="post-minimal-title"><a href="No.2.2.4.html">2.2.4 Entorno de desarrollo.</a></h4>
+                 </div>
+                 </div>
+
+                 
+
         </div>
-      </section>
+  
+        
+
+              
+              
+       
+        
+          
       
-    </div>
     <div class="snackbars" id="form-output-global"></div>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
   </body>
   <style>
+
   /*Derechos de autos*/
     .footer {
         background-color: #2c3e50; /* Color de fondo oscuro */
         color: white; /* Texto en color blanco */
         padding: 15px;
         text-align: center;
-        font-size: 14px;
+        font-size: 10px;
         border-radius: 10px; /* Bordes redondeados */
         margin: 20px; /* Separación del contenido */
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */

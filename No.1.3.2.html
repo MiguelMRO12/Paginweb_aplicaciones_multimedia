@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Aplicaciones Multimedia</title>
+    <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/upiicsa.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Work+Sans:300,400,500,700%7CZilla+Slab:300,400,500,700,700i%7CGloria+Hallelujah">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  </head>
+  <body>
+    <style>
+      @keyframes mover {
+          0% { transform: translateX(0); }
+          50% { transform: translateX(20px); } /* Se mueve a la derecha */
+          100% { transform: translateX(0); } /* Vuelve a la posición original */
+      }
+  
+      .imagen-animada {
+          width: 300px;
+          animation: mover 2s infinite ease-in-out; /* Movimiento constante */
+      }
+      </style>
+      <style>
+    .imagen-hover {
+        width: 300px; /* Tamaño de la imagen */
+        transition: transform 0.5s ease-in-out; /* Transición suave */
+    }
+
+    .imagen-hover:hover {
+        transform: scale(1.1); /* Aumenta de tamaño al pasar el mouse */
+    }
+</style>
+<style>
+  .imagen-zoom-rotar {
+      width: 300px;
+      transition: transform 0.5s ease-in-out;
+  }
+
+  .imagen-zoom-rotar:hover {
+      transform: scale(1.2) rotate(10deg);
+  }
+</style>
+<style>
+  @keyframes zigzag {
+      0% { transform: translate(0, 0); }
+      25% { transform: translate(20px, 10px); }
+      50% { transform: translate(-20px, -10px); }
+      75% { transform: translate(20px, -10px); }
+      100% { transform: translate(0, 0); }
+  }
+
+  .imagen-zigzag {
+      width: 300px;
+      animation: zigzag 3s infinite ease-in-out;
+  }
+</style>
+
+  </style>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="preloader">
+      
+    </div>
+    <div class="page">
+      <header class="page-header">
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <div class="rd-navbar-panel">
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <div class="rd-navbar-brand"><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/upiicsa2.jpg" alt="" width="300" height="60"/><img class="brand-logo-light" src="images/upiicsa.jpg" alt="" width="300" height="60"/></a>
+                  </div>
+                </div>
+                <div class="rd-navbar-nav-wrap">
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">INICIO</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="temario.html">CONTENIDO</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">NOTICIAS</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="integrantes.html">INTEGRANTES</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="acercade.html">ACERCA DE</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        
+              <div class="titulo-fijo" id="tituloFijo">
+                Mecanismo de funcionamiento de los videojuegos
+                .
+            </div>
+              <style>
+
+                /* Barra de navegación fija en la parte superior */
+                .navbar {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 60px; /* Altura de la barra */
+                    background-color: #2c3e50;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 18px;
+                    font-weight: bold;
+                    z-index: 1000; /* Asegura que esté sobre otros elementos */
+                }
+            
+                /* Título fijo debajo de la barra de navegación */
+                .titulo-fijo {
+                    position: fixed;
+                    top: 75px; /* Debe ser igual a la altura de la barra */
+                    left: 0;
+                    width: 100%;
+                    background-color: #34495e;
+                    color: white;
+                    text-align: center;
+                    padding: 15px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    z-index: 999; /* Un poco menor que la barra de navegación */
+                }
+            
+                /* Contenido para hacer scroll */
+                .contenido {
+                    margin-top: 120px; /* Espacio para no tapar el contenido con la barra y el título */
+                    padding: 20px;
+                    font-size: 16px;
+                }
+            </style>
+            
+            <!-- Barra de navegación fija -->
+  
+            
+            <!-- Título fijo debajo de la barra -->
+           
+            
+            <!-- Contenido para probar el scroll -->
+         
+            
+             
+      </header>
+      <br><br>
+      <div class="container"><h4>1.3.2 Mecanismo de funcionamiento de los videojuegos.</h4></div>
+
+        <!-- Base de imagenes lateral derecha -->
+        <div class="container">
+          <div class="row row-50 flex-lg-row-reverse">
+            <div class="col-xl-4">
+              <ul class="list-lg">
+                
+                <li>
+                  <p><img  src="images/funcionamiento1.jpg" alt="" class="imagen-animada" width="340" height="250" /></p><BR>
+                      <BR>
+                      <BR>
+                      <BR>
+                      <BR>
+                    <p><img class="imagen-hover" src="images/funcionamiento2.jpg" alt=""  width="340" height="250"/></p>
+                 </li>
+              </ul>
+            </div>
+      <!-- contenido lateral derecho -->
+            <div class="col-xl-8">
+              
+              <ul class="list-xl">
+                <li>
+                  <h1 class="h1fixed"></h1>
+                  <p>
+                    Los videojuegos son sistemas interactivos complejos que integran múltiples componentes técnicos para crear experiencias inmersivas. A diferencia de otros medios digitales, su funcionamiento depende de la sincronización perfecta entre hardware, software y diseño interactivo. Este ensayo examina los mecanismos fundamentales que permiten el funcionamiento de los videojuegos, desde el procesamiento de datos hasta la interacción con el usuario, pasando por la renderización gráfica y la inteligencia artificial.                    <br>
+                    <br>
+                   <p> 
+                    <h4 >
+                    1. Arquitectura Básica de un Videojuego
+                    </h4>
+                    <br>
+                    <h5>
+1.1 Bucle Principal (Game Loop)
+</h5>
+
+El núcleo de todo videojuego es un ciclo continuo que ejecuta tres procesos esenciales:
+<br>
+1.	Entrada (Input): Captura de acciones del jugador (teclado, mando, pantalla táctil).
+<br>
+2.	Actualización (Update): Cálculo de física, IA y cambios en el estado del juego.
+<br>
+3.	Renderizado (Render): Dibujado de gráficos en pantalla.
+
+                  </p>
+                </li>
+                <li> 
+                  <p>
+                    <h4>2. Procesamiento de Entradas del Usuario </h4>
+                    <br>
+<h5>2.1 Captura de Controles</h5>
+
+•	Dispositivos de entrada:
+<br>
+o	Teclado (señales digitales ON/OFF)
+<br>
+o	Mandos (inputs analógicos con sensibilidad variable)
+<br>
+o	Pantallas táctiles (gestos multitáctiles)
+<br>
+<br>
+<h5>2.2 Sistemas de Respuesta</h5>
+
+•	Polling vs. Eventos:
+<br>
+o	Polling: Verificación constante del estado de los controles.
+<br>
+o	Eventos: Acciones disparadas por interrupciones específicas (ej. botón pulsado).
+<br>
+•	Dead zones: Zonas muertas en joysticks para evitar inputs no deseados.
+
+                                
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <!--contenido con imagen lateral izquierdo -->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xl-10">
+              
+              <div class="row row-30">
+                <div class="col-md-6">
+                  <br>
+                   <p><img class="imagen-zoom-rotar" src="images/funcionamiento3.jpg" alt="" width="340" height="250"/></p>
+                   <br>
+                   <br>
+                   <br>
+                   <br>
+                   <br>
+                   <br>
+                   <p><img class="imagen-zigzag" src="images/funcionamiento4.jpg" alt="" width="340" height="250"></p>
+                </div>
+                <div class="col-md-6">
+                <br>
+                  <br>
+  
+                  <p>
+                   <h4> 3. Renderización Gráfica</h4>
+                    <br>
+<h5>3.1 Pipeline Gráfico</h5>
+
+Proceso por etapas para convertir modelos 3D en imágenes 2D:
+<br>
+1.	Geometría: Posición de vértices y polígonos.
+<br>
+2.	Vertex Shading: Iluminación y transformaciones.
+<br>
+3.	Rasterización: Conversión a píxeles.
+<br>
+4.	Pixel Shading: Aplicación de texturas y efectos.
+<br>
+<br>
+<h5>3.2 Técnicas Avanzadas</h5>
+
+•	Ray Tracing: Simulación realista de luz (NVIDIA RTX).
+<br>
+•	DLSS/FSR: Upscaling inteligente para mejorar rendimiento.
+<br>
+•	Culling: Eliminación de objetos no visibles para optimizar.
+
+
+                </p> 
+                <br>
+                <br>
+                <p>
+                  <h4>4. Inteligencia Artificial en Videojuegos</h4>
+
+                  <br>
+<h5>4.1 Comportamiento de NPCs</h5>
+
+•	Árboles de decisión: Elecciones basadas en condiciones predefinidas.
+<br>
+•	Máquinas de estados finitos: Transiciones entre comportamientos (ej. "alerta", "pasivo").
+<br>
+•	Pathfinding: Algoritmos como A* para navegación en mapas.
+<br>
+<br>
+<h5>4.2 IA Adaptativa</h5>
+•	Sistemas de aprendizaje: NPCs que evolucionan según el estilo del jugador.
+<br>
+•	Proceduralidad: Generación dinámica de diálogos o misiones.
+
+
+
+                  
+  
+                </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="container">
+          <div class="row row-50 flex-lg-row-reverse">
+            <div class="col-xl-4">
+              <ul class="list-lg">
+                
+                <li>
+                  <p><img  src="images/funcionamiento5.webp" alt="" class="imagen-animada" width="340" height="250" /></p><BR>
+                      <BR>
+                      <BR>
+                      <BR>
+                      <BR>
+                    <p><img class="imagen-zigzag" src="images/funcionamiento6.jpg" alt=""  width="340" height="250"/></p>
+                      
+                 </li>
+              </ul>
+            </div>
+  
+             <!-- contenido lateral derecho -->
+             <div class="col-xl-8">
+              
+              <ul class="list-xl">
+                <li>
+                  <h1 class="h1fixed"></h1>
+                  <p>
+                    <h4>
+                    5. Sincronización y Gestión de Recursos
+                  </h4>
+                    <br>
+<h5>5.1 Sistemas de Tiempo </h5>
+
+•	Delta Time: Ajuste de velocidad según FPS para movimiento uniforme.
+<br>
+•	Time Scaling: Efectos de cámara lenta o pausa.
+<br>
+<br>
+<h5>5.2 Gestión de Memoria</h5>
+
+•	Pooling: Reutilización de objetos para evitar carga constante.
+<br>
+•	Streaming: Carga dinámica de assets en juegos de mundo abierto.
+
+                                               
+                                        
+                    <br>
+                    <br>
+                  <p>
+                    <h4>6. Redes y Multijugador </h4>
+                    <br>
+<h5>6.1 Modelos de Conexión </h5>
+
+•	Peer-to-Peer (P2P): Conexión directa entre jugadores (ej. Fighting Games).
+<br>
+•	Cliente-Servidor: Servidor central que valida acciones (MMORPGs).
+<br>
+<br>
+<h5>6.2 Técnicas de Sincronización</h5>
+
+•	Interpolación: Suavizado de movimientos entre actualizaciones.
+<br>
+•	Predicción: Anticipación de acciones para reducir latencia.
+<br>
+•	Rollback: Reconstrucción de estados pasados en caso de desincronización.
+
+                    
+                    
+                    
+                  </p>
+                </li>
+                <li> 
+                  <p>
+                    
+                    
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+  <style>
+     /*Derechos de autos*/
+    .footer {
+        background-color: #2c3e50; /* Color de fondo oscuro */
+        color: white; /* Texto en color blanco */
+        padding: 15px;
+        text-align: center;
+        font-size: 10x;
+        border-radius: 10px; /* Bordes redondeados */
+        margin: 20px; /* Separación del contenido */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+    }
+    .footer a {
+        color: #1abc9c; /* Color llamativo para enlaces */
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .footer a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<footer class="footer">
+    <p>© 2025 Instituto Político Nacional. Todos los derechos reservados.</p>
+    <p>Este sitio web y su contenido son propiedad del Instituto Político Nacional. 
+    Queda prohibida la reproducción, distribución o modificación total o parcial 
+    sin autorización previa por escrito.</p>
+    <p>Sitio web desarrollado por la Universidad UPIICSA.</p>
+    <p>Para consultas o permisos de uso, contáctenos en 
+    <a href="mailto:contacto@institutopolitico.com">contacto@institutopolitico.com</a>.</p>
+</footer>
+</html>

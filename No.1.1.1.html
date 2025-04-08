@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Aplicaciones Multimedia</title>
+    <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/upiicsa.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Work+Sans:300,400,500,700%7CZilla+Slab:300,400,500,700,700i%7CGloria+Hallelujah">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  </head>
+  <body>
+    <style>
+      @keyframes mover {
+          0% { transform: translateX(0); }
+          50% { transform: translateX(20px); } /* Se mueve a la derecha */
+          100% { transform: translateX(0); } /* Vuelve a la posición original */
+      }
+  
+      .imagen-animada {
+          width: 300px;
+          animation: mover 2s infinite ease-in-out; /* Movimiento constante */
+      }
+      </style>
+      <style>
+    .imagen-hover {
+        width: 300px; /* Tamaño de la imagen */
+        transition: transform 0.5s ease-in-out; /* Transición suave */
+    }
+
+    .imagen-hover:hover {
+        transform: scale(1.1); /* Aumenta de tamaño al pasar el mouse */
+    }
+</style>
+<style>
+  .imagen-zoom-rotar {
+      width: 300px;
+      transition: transform 0.5s ease-in-out;
+  }
+
+  .imagen-zoom-rotar:hover {
+      transform: scale(1.2) rotate(10deg);
+  }
+ 
+</style>
+<style>
+  @keyframes zigzag {
+      0% { transform: translate(0, 0); }
+      25% { transform: translate(20px, 10px); }
+      50% { transform: translate(-20px, -10px); }
+      75% { transform: translate(20px, -10px); }
+      100% { transform: translate(0, 0); }
+  }
+
+  .imagen-zigzag {
+      width: 300px;
+      animation: zigzag 3s infinite ease-in-out;
+  }
+  .imagengiro {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+  .imagen-grio {
+-webkit-transform: rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+transform: rotateY(180deg);
+transform-style: preserve-3d;}
+</style>
+
+  </style>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="preloader">
+      <div class="preloader-logo"><a class="brand" href="index.html"></a>
+      </div>
+      <div class="preloader-body">
+       
+      </div>
+    </div>
+    <div class="page">
+      <header class="page-header">
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <div class="rd-navbar-panel">
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <div class="rd-navbar-brand"><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/upiicsa2.jpg" alt="" width="300" height="60"/><img class="brand-logo-light" src="images/upiicsa.jpg" alt="" width="300" height="60"/></a>
+                  </div>
+                </div>
+                <div class="rd-navbar-nav-wrap">
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">INICIO</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="temario.html">CONTENIDO</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="noticias.html">NOTICIAS</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="integrantes.html">INTEGRANTES</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="acercade.html">ACERCA DE</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        
+              <div class="titulo-fijo" id="tituloFijo">
+                APLICACIONES EN LA EDUCACIÓN.
+            </div>
+              <style>
+
+                /* Barra de navegación fija en la parte superior */
+                .navbar {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 60px; /* Altura de la barra */
+                    background-color: #2c3e50;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 18px;
+                    font-weight: bold;
+                    z-index: 1000; /* Asegura que esté sobre otros elementos */
+                }
+            
+                /* Título fijo debajo de la barra de navegación */
+                .titulo-fijo {
+                    position: fixed;
+                    top: 75px; /* Debe ser igual a la altura de la barra */
+                    left: 0;
+                    width: 100%;
+                    background-color: #34495e;
+                    color: white;
+                    text-align: center;
+                    padding: 10px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    z-index: 999; /* Un poco menor que la barra de navegación */
+                }
+            
+                /* Contenido para hacer scroll */
+                .contenido {
+                    margin-top: 120px; /* Espacio para no tapar el contenido con la barra y el título */
+                    padding: 20px;
+                    font-size: 16px;
+                }
+            </style>
+            
+            <!-- Barra de navegación fija -->
+  
+            
+            <!-- Título fijo debajo de la barra -->
+           
+            
+            <!-- Contenido para probar el scroll -->
+            
+      </header>
+      <br>
+     <div class="container">
+      <h3> 1.1.1  Aplicaciones en la eduacion</h3>
+    </div>
+      <!-- Base de imagenes lateral derecha -->
+          <div class="container">
+          <div class="row row-50 flex-lg-row-reverse">
+            <div class="col-xl-4">
+              <ul class="list-lg">
+                
+                <li>
+                  <p><img  src="images/eduacion3.jpg" alt="" class="imagen-animada" width="340" height="250" /></p><BR>
+                      <BR>
+                      <BR>
+                      <BR>
+                      <BR>
+                    <p><img class="imagen-hover" src="images/educacion1.jpg" alt=""  width="340" height="250"/></p>
+                 </li>
+              </ul>
+            </div>
+      <!-- contenido lateral derecho -->
+            <div class="col-xl-8">
+              
+              <ul class="list-xl">
+                <li>
+                  <h1 class="h1fixed"></h1>
+                  <p>
+                    En la era digital, la educación ha experimentado una transformación significativa con la incorporación 
+                    de tecnologías multimedia. Las herramientas interactivas, las plataformas de aprendizaje en línea y los 
+                    videojuegos educativos han revolucionado la manera en que los estudiantes adquieren conocimientos. 
+                    <br>
+                    <br>
+                    Sin embargo, el uso de estas tecnologías también plantea desafíos que deben ser considerados para su 
+                    implementación efectiva. En este ensayo, se analizarán los diferentes tipos de aplicaciones multimedia 
+                    en la educación, sus beneficios y las dificultades que pueden surgir en su uso.
+                  </p>
+                </li>
+                <li> 
+                  <p>
+                    
+                    Las herramientas multimedia en el ámbito educativo facilitan la enseñanza y el aprendizaje al combinar
+                     diversos medios que captan la atención de los estudiantes y mejoran la comprensión de los contenidos.
+                      Ejemplos incluyen plataformas de aprendizaje en línea, simulaciones interactivas y recursos educativos 
+                      digitales que permiten una educación más dinámica y accesible. 
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </div>
+       
+      <!--contenido con imagen lateral izquierdo -->
+          <div class="container">  
+          <div class="row">
+            <div class="col-lg-5 col-xl-10">
+              
+              <div class="row row-30">
+                <div class="col-md-6">
+                  <br>
+                   <p><img class="imagen-zoom-rotar" src="images/educacion2.webp" alt="" width="340" height="250"/></p>
+                </div>
+                <div class="col-md-6">
+                
+                  <p><h3>En la Edacucion:</h3> La multimedia en la educación facilita el aprendizaje interactivo y atractivo. 
+                    Por ejemplo, el uso de aplicaciones educativas móviles permite a los estudiantes acceder a contenido
+                     interactivo en cualquier momento y lugar, promoviendo el aprendizaje ubicuo. 
+                </p> 
+                </div>
+              </div>
+            </div>
+          </div>
+       
+          <div class="row row-50 flex-lg-row-reverse">
+            <div class="col-xl-4">
+              <ul class="list-lg">
+                
+                <li>
+                  <p><img  src="images/educacion3.webp" alt="" class="imagen-animada" width="340" height="250" /></p><BR>
+                      <BR>
+                      <BR>
+                      <BR>
+                      <BR>
+                    <p><img class="imagen-zigzag" src="images/educacion4.png" alt=""  width="340" height="250"/></p>
+                      <BR>
+                      <br>
+                    <p><img class="imagen-animada" src="images/educacion5.jpg" alt=""  width="340" height="250"/></p>
+                 </li>
+              </ul>
+            </div>
+
+       <!-- contenido lateral derecho -->
+            <div class="col-xl-8">
+              
+              <ul class="list-xl">
+                <li>
+                  <h1 class="h1fixed"></h1>
+                  <p>
+                    En la era digital, la educación ha experimentado una transformación significativa con la incorporación 
+                    de tecnologías multimedia. Las herramientas interactivas, las plataformas de aprendizaje en línea y los 
+                    videojuegos educativos han revolucionado la manera en que los estudiantes adquieren conocimientos. 
+                    <br>
+                    <br>
+                    Sin embargo, el uso de estas tecnologías también plantea desafíos que deben ser considerados para su 
+                    implementación efectiva. En este ensayo, se analizarán los diferentes tipos de aplicaciones multimedia 
+                    en la educación, sus beneficios y las dificultades que pueden surgir en su uso.
+                  </p>
+                </li>
+                <li> 
+                  <p>
+                    
+                    Las herramientas multimedia en el ámbito educativo facilitan la enseñanza y el aprendizaje al combinar
+                     diversos medios que captan la atención de los estudiantes y mejoran la comprensión de los contenidos.
+                      Ejemplos incluyen plataformas de aprendizaje en línea, simulaciones interactivas y recursos educativos 
+                      digitales que permiten una educación más dinámica y accesible. 
+                  </p>
+                  <BR>
+              
+                  </BR>
+                  <p>
+                    Uno de los aspectos más relevantes de las aplicaciones multimedia en la educación es la capacidad de personalizar 
+                    el aprendizaje. Plataformas como Moodle, Coursera y EdX han demostrado ser herramientas efectivas para la educación
+                    a distancia, permitiendo que los estudiantes accedan a contenido adaptado a su ritmo y estilo de aprendizaje. Además, 
+                   la interactividad de las aplicaciones educativas como Duolingo y GeoGebra facilita la comprensión de conceptos complejos, 
+                    especialmente en áreas como los idiomas y las matemáticas.
+                  </p>
+                  
+              
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <!--Contenido a la izquierda-->
+      
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xl-10">
+              
+              <div class="row row-30">
+                <div class="col-md-6">
+                  
+                   <p><img class="imagen-zigzag" src="images/eduacion2.jpg" alt="" width="340" height="250"/></p>
+                   <br>
+                   <br>
+                   <br>
+                   <br>
+                   <br>
+                   <br>
+                   <p><img class="imagen-animada" src="images/educacion 6.jpg" alt="" width="340" height="250"/></p>
+                   <br>
+                   <br>
+                   <br>
+                   <p><img class="imagen-hover" src="images/educacion 7.jpg" alt=" width340" height="250"/> </p>
+                </div>
+                <div class="col-md-6">
+                
+
+                  <p>Otro aspecto fundamental es el uso de simulaciones educativas y realidad virtual. Estas tecnologías permiten a los 
+                    estudiantes experimentar situaciones que serían imposibles o peligrosas en un aula tradicional. Por ejemplo, 
+                    en el campo de la medicina, las simulaciones de cirugía ayudan a los estudiantes a practicar procedimientos sin 
+                    poner en riesgo la vida de un paciente. De manera similar, la realidad aumentada ha demostrado ser útil en la enseñanza 
+                    de la historia y la geografía, proporcionando experiencias inmersivas que aumentan la retención del conocimiento.
+                </p> 
+                <br>
+                <p>La gamificación también ha demostrado ser una estrategia eficaz para mejorar la motivación de los estudiantes.
+                  Herramientas como Kahoot! y Minecraft: Education Edition han integrado mecánicas de juego en la educación, 
+                  incentivando la participación activa y el pensamiento crítico. Sin embargo, es importante que la gamificación
+                   sea diseñada con un propósito pedagógico claro, evitando que se convierta en una simple distracción.
+
+                </p>
+                <br>
+                <p>
+                  No obstante, a pesar de los beneficios evidentes, el uso de aplicaciones multimedia en la educación enfrenta varios desafíos. 
+                  La brecha digital sigue siendo un obstáculo significativo, ya que no todos los estudiantes tienen acceso a tecnología avanzada
+                   o conexión a internet de alta velocidad. Además, los docentes requieren capacitación para integrar eficazmente estas herramientas
+                    en su metodología de enseñanza. Otro aspecto preocupante es la privacidad de los datos, ya que muchas plataformas recopilan información
+                     personal de los usuarios.
+                </p>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+
+      
+
+     
+      <!--Texto lateral derecho de videoreproductor 
+      <section class="section section-lg bg-default">
+        <div class="container">
+          <div class="row row-50 justify-content-center justify-content-xl-between flex-lg-row-reverse">
+            <div class="col-md-11 col-lg-6 col-xl-5">
+              <div class="box-1">
+                <h2></h2>
+                <p>Las aplicaciones multimedia en la educación son recursos que combinan texto, imágenes, audio, video y animación para enseñar y aprender. Estas aplicaciones pueden ayudar a los estudiantes a desarrollar habilidades digitales, como la creatividad, el pensamiento crítico y la resolución de problemas. </p>
+              </div>
+            </div>
+            video incrustado
+            <div class="col-md-11 col-lg-6">
+              <div class="thumbnail-media" style="background-image: url(images/TIPOS1.jpg);"><a class="icon thumbnail-media-icon mdi mdi-play-circle-outline" href="https://www.youtube.com/watch?v=4AjHxqt2WjM" data-lightgallery="item"></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+-->
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+  <style>
+     /*Derechos de autos*/
+    .footer {
+        background-color: #2c3e50; /* Color de fondo oscuro */
+        color: white; /* Texto en color blanco */
+        padding: 15px;
+        text-align: center;
+        font-size: 1opx;
+        border-radius: 10px; /* Bordes redondeados */
+        margin: 20px; /* Separación del contenido */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+    }
+    .footer a {
+        color: #1abc9c; /* Color llamativo para enlaces */
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .footer a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<footer class="footer">
+    <p>© 2025 Instituto Político Nacional. Todos los derechos reservados.</p>
+    <p>Este sitio web y su contenido son propiedad del Instituto Político Nacional. 
+    Queda prohibida la reproducción, distribución o modificación total o parcial 
+    sin autorización previa por escrito.</p>
+    <p>Sitio web desarrollado por la Universidad UPIICSA.</p>
+    <p>Para consultas o permisos de uso, contáctenos en 
+    <a href="mailto:contacto@institutopolitico.com">contacto@institutopolitico.com</a>.</p>
+</footer>
+</html>
